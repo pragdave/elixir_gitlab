@@ -5,10 +5,6 @@ defmodule ElixirGitlab.API do
 
   @name __MODULE__
 
-  @default_environment %{
-    url_prefix:    "https://git1.pragprog.com/api/v3",
-    private_token: "zWz4uiwnxGmy6bDz2J5c"
-  }
 
   #######
   # API #
