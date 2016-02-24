@@ -1,5 +1,7 @@
 defmodule ElixirGitlab.Util.Options do
 
+  alias ElixirGitlab.API
+
   @doc """
   Make sure a given set of options has all the required keys,
   and that any remaining keys are listed in the set of

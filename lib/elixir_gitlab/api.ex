@@ -5,6 +5,10 @@ defmodule ElixirGitlab.API do
 
   @name __MODULE__
 
+  @default_environment %{
+    url_prefix:    Application.get_env(:elixir_gitlab, :url_prefix),
+    private_token: Application.get_env(:elixir_gitlab, :private_token)
+  }
 
   #######
   # API #

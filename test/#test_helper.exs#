@@ -1,4 +1,4 @@
-defmodule ApiCase do
+ defmodule ApiCase do
 
   use ExUnit.CaseTemplate
   alias ElixirGitlab.API
@@ -18,10 +18,9 @@ defmodule ApiCase do
 
   using do
     quote do
-
       def expect(bypass, method, path, body \\ nil, returns) do
         Bypass.expect bypass, fn conn ->
-          assert path   == conn.request_path
+          assert path == conn.request_path
           assert method == conn.method
           if body do
             with {:ok, request_body, _} = Plug.Conn.read_body(conn),

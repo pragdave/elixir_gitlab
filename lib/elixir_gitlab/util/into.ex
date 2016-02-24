@@ -12,7 +12,8 @@ defmodule ElixirGitlab.Util.Into do
   end
 
   def into({:ok, item}, struct_name) when is_map(item) do
-    struct!(struct_name, item)
+    with sanitized_results = item |> Map.delete(:private_token),
+    do:  struct!(struct_name, sanitized_results)
   end
 
   def into(error, _struct) do

@@ -6,7 +6,7 @@
   "httpoison": {:hex, :httpoison, "0.8.1"},
   "idna": {:hex, :idna, "1.0.3"},
   "mimerl": {:hex, :mimerl, "1.0.2"},
-  "plug": {:hex, :plug, "1.1.0"},
+  "plug": {:hex, :plug, "1.1.2"},
   "poison": {:hex, :poison, "2.0.1"},
   "ranch": {:hex, :ranch, "1.2.1"},
   "ssl_verify_hostname": {:hex, :ssl_verify_hostname, "1.0.5"}}

@@ -2,7 +2,6 @@ defmodule ElixirGitlab.API.Projects do
 
   alias  ElixirGitlab.API
   import ElixirGitlab.Util.Options
-  import ElixirGitlab.Util.Into
 
 
 
